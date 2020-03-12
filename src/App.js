@@ -7,7 +7,6 @@ import axios from 'axios';
 import Styles from './App.module.scss';
 
 class App extends React.Component {
-
   constructor(props) {
     super(props);
 
@@ -37,8 +36,8 @@ class App extends React.Component {
         <CssBaseline />
         <div className={Styles.App}>
           <ButtonAppBar toggleDrawer={this.toggleDrawer}></ButtonAppBar>
-          <SideDrawer 
-            toggleDrawer={this.toggleDrawer} 
+          <SideDrawer
+            toggleDrawer={this.toggleDrawer}
             open={this.state.drawerOpen}>
           </SideDrawer>
           <TeamRecords standings={standings}></TeamRecords>
@@ -56,11 +55,11 @@ class App extends React.Component {
       .then((response) => {
         this.setState({
           standings: response.data.data
-        })
+        });
       })
       .catch((error) => {
         console.error(error);
-      })
+      });
   }
 
 }

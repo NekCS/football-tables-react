@@ -6,8 +6,6 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Styles from './ButtonAppBar.module.scss';
 
-
-
 const ButtonAppBar = (props) => {
 
   return (
@@ -21,6 +19,6 @@ const ButtonAppBar = (props) => {
     </AppBar>
 
   );
-}
+};
 
 export default ButtonAppBar;
